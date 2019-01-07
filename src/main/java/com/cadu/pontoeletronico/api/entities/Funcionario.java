@@ -22,7 +22,7 @@ import javax.persistence.PreUpdate;
 import javax.persistence.Table;
 import javax.persistence.Transient;
 
-import com.cadu.pontoEletronico.api.enums.PerfilEnum;
+import com.cadu.pontoeletronico.api.enums.PerfilEnum;
 
 @Entity
 @Table(name = "funcionario")

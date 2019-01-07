@@ -18,7 +18,7 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
-import com.cadu.pontoEletronico.api.enums.TipoEnum;
+import com.cadu.pontoeletronico.api.enums.TipoEnum;
 
 @Entity
 @Table(name = "lancamento")
