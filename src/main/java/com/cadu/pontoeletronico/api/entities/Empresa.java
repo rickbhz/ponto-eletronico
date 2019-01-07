@@ -1,4 +1,4 @@
-package com.cadu.pontoeletronico.api.api.entities;
+package com.cadu.pontoeletronico.api.entities;
 
 import java.io.Serializable;
 import java.util.Date;

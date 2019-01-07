@@ -1,4 +1,4 @@
-package com.cadu.pontoeletronico;
+package com.cadu.pontoeletronico.api;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
