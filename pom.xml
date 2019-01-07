@@ -11,7 +11,7 @@
 	<groupId>com.cadu</groupId>
 	<artifactId>pontoEletronico</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>PontoEletronico</name>
+	<name>Ponto Eletronico</name>
 	<description>Projeto de API para Ponto Eletronico</description>
 
 
