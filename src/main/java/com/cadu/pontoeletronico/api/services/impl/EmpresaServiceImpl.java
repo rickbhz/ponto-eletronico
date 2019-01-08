@@ -14,7 +14,7 @@ import com.cadu.pontoeletronico.api.services.EmpresaService;
 @Service
 public class EmpresaServiceImpl implements EmpresaService {
 
-	public final static Logger log = LoggerFactory.getLogger(EmpresaServiceImpl.class);
+	private static final Logger log = LoggerFactory.getLogger(EmpresaServiceImpl.class);
 	
 	@Autowired
 	private EmpresaRepository empresaRepository;
