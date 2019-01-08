@@ -41,7 +41,7 @@ public class FuncionarioServiceTest {
 	}
 	
 	@Test
-	public void testPersistirFuncionario() {
+	public void testePersistirFuncionario() {
 		
 		Funcionario funcionario = this.funcionarioService.persistir(new Funcionario());
 		
@@ -49,21 +49,21 @@ public class FuncionarioServiceTest {
 	}
 	
 	@Test
-	public void testBuscarFuncionarioPorId() {
-		//Optional<Funcionario> funcionario = this.funcionarioService.buscarPorId(1L);
+	public void testeBuscarFuncionarioPorId() {
+		Optional<Funcionario> funcionario = this.funcionarioService.buscarPorId(1L);
 		
-		assertNotNull(this.funcionarioService.buscarPorId(1L));
+		assertTrue(funcionario.isPresent());
 	}
 	
 	@Test
-	public void testBuscarFuncionarioPorCpf() {
+	public void testeBuscarFuncionarioPorCpf() {
 		Optional<Funcionario> funcionario = this.funcionarioService.buscarPorCpf("04010910666");
 		
 		assertTrue(funcionario.isPresent());
 	}	
 	
 	@Test
-	public void testBuscarFuncionarioPorEmail() {
+	public void testeBuscarFuncionarioPorEmail() {
 		Optional<Funcionario> funcionario = this.funcionarioService.buscarPorEmail("email@email.com");
 		
 		assertTrue(funcionario.isPresent());
