@@ -16,23 +16,22 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import com.cadu.pontoeletronico.api.repositories.EmpresaRepository;
 import com.cadu.pontoeletronico.api.entities.Empresa;
-
+import com.cadu.pontoeletronico.api.repositories.EmpresaRepository;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
 @ActiveProfiles("test")
 public class EmpresaServiceTest {
 
-	@MockBean 
+	@MockBean
 	private EmpresaRepository empresaRepository;
-	
+
 	@Autowired
 	private EmpresaService empresaService;
-	
+
 	private static final String CNPJ = "51463645000100";
-	
+
 	@Before
 	public void setUp() throws Exception {
 		BDDMockito.given(this.empresaRepository.findByCnpj(Mockito.anyString())).willReturn(new Empresa());
