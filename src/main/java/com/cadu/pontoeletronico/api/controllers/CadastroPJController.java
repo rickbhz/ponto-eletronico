@@ -9,7 +9,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;
-import org.springframework.validation.Errors;
 import org.springframework.validation.ObjectError;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -25,7 +24,7 @@ import com.cadu.pontoeletronico.api.response.Response;
 import com.cadu.pontoeletronico.api.services.EmpresaService;
 import com.cadu.pontoeletronico.api.services.FuncionarioService;
 import com.cadu.pontoeletronico.api.utils.SenhaUtils;
-import com.kazale.pontointeligente.api.utils.PasswordUtils;
+
 
 @RestController
 @RequestMapping("/api/cadastrar-pj")
@@ -52,7 +51,7 @@ public class CadastroPJController {
 		
 		validarDadosExistentes(cadastroPJDto, result);
 		Empresa empresa = this.converterDtoParaEmpresa(cadastroPJDto);
-		Funcionario funcionario = this.converterDtoParaFuncionario(cadastroPJDto,  result);
+		Funcionario funcionario = this.converterDtoParaFuncionario(cadastroPJDto);
 		
 		if (result.hasErrors()) {
 			log.error("erro validando dados de cadastro PJ: {}",result.getAllErrors());
@@ -80,7 +79,7 @@ public class CadastroPJController {
 		return cadastroPJDto;
 	}
 
-	private Funcionario converterDtoParaFuncionario(CadastroPJDto cadastroPJDto, BindingResult result) 
+	private Funcionario converterDtoParaFuncionario(CadastroPJDto cadastroPJDto) 
 	throws NoSuchAlgorithmException {
 		Funcionario funcionario = new Funcionario();
 		funcionario.setNome(cadastroPJDto.getNome());
