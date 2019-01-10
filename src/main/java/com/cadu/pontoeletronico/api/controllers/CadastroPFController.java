@@ -19,7 +19,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.cadu.pontoeletronico.api.dtos.CadastroPFDto;
-import com.cadu.pontoeletronico.api.dtos.CadastroPJDto;
 import com.cadu.pontoeletronico.api.entities.Empresa;
 import com.cadu.pontoeletronico.api.entities.Funcionario;
 import com.cadu.pontoeletronico.api.enums.PerfilEnum;
@@ -34,7 +33,7 @@ import com.cadu.pontoeletronico.api.utils.SenhaUtils;
 @CrossOrigin(origins = "*")
 public class CadastroPFController {
 
-	private static final Logger log = LoggerFactory.getLogger(CadastroPJController.class);
+	private static final Logger log = LoggerFactory.getLogger(CadastroPFController.class);
 	
 	
 	@Autowired
