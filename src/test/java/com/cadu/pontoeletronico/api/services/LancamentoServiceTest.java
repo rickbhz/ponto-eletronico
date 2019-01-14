@@ -54,7 +54,7 @@ public class LancamentoServiceTest {
 	@Test
 	public void testBuscarLancamentoPorId () {
 		
-		Optional<Lancamento> lancamento = this.lancamentoService.buscarPorid(1L);
+		Optional<Lancamento> lancamento = this.lancamentoService.buscarPorId(1L);
 		assertNotNull(lancamento);
 		//assertTrue(lancamento.isPresent());
 	}

@@ -11,7 +11,7 @@ public interface LancamentoService {
 
 	Page<Lancamento> buscarPorFuncionarioId(Long funcionario, PageRequest pageRequest);
 	
-	Optional<Lancamento> buscarPorid (Long id);
+	Optional<Lancamento> buscarPorId (Long id);
 	
 	Lancamento persistir(Lancamento lancamento);
 	
