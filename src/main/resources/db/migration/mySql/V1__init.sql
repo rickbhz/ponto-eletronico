@@ -42,8 +42,7 @@ ALTER TABLE `empresa`
 -- Indexes for table `funcionario`
 --
 ALTER TABLE `funcionario`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `FK4cm1kg523jlopyexjbmi6y54j` (`empresa_id`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `lancamento`
