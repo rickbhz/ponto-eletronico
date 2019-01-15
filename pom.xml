@@ -13,7 +13,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Ponto Eletronico</name>
 	<description>Projeto de API para Ponto Eletronico</description>
-
+ 
 
 
 	<properties>
@@ -94,7 +94,6 @@
 		<dependency>
 		    <groupId>org.apache.commons</groupId>
 		    <artifactId>commons-lang3</artifactId>
-		    <version>3.6</version>
 		</dependency>		
 
 			
