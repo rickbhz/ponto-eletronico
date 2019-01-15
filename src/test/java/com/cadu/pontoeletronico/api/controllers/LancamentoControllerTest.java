@@ -76,7 +76,7 @@ public class LancamentoControllerTest {
 				.andExpect(jsonPath("$.data.funcionarioId").value(ID_FUNCIONARIO))
 				.andExpect(jsonPath("$.errors").isEmpty());
 	}
-	/*
+	
 	@Test
 	public void testCadastrarLancamentoFuncionarioIdInvalido() throws Exception {
 		
@@ -88,9 +88,9 @@ public class LancamentoControllerTest {
 				.contentType(MediaType.APPLICATION_JSON)
 				.accept(MediaType.APPLICATION_JSON))
 				.andExpect(status().isBadRequest())
-				//.andExpect(jsonPath("$.errors").value("funcionario não encontrado. Id inexistente"))
+				.andExpect(jsonPath("$.errors").value("funcionario não encontrado. Id inexistente"))
 				.andExpect(jsonPath("$.data").isEmpty());
-	}	*/
+	}	
 	
 	@Test
 	public void testRemoverLancamento() throws Exception {
