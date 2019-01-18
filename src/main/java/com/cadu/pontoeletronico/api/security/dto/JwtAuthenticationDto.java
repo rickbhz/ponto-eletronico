@@ -3,6 +3,7 @@ package com.cadu.pontoeletronico.api.security.dto;
 import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.NotEmpty;
 
+@SuppressWarnings("deprecation")
 public class JwtAuthenticationDto {
 	
 	private String email;
@@ -10,6 +11,7 @@ public class JwtAuthenticationDto {
 
 	public JwtAuthenticationDto() {
 	}
+
 
 	@NotEmpty(message = "Email não pode ser vazio.")
 	@Email(message = "Email inválido.")
